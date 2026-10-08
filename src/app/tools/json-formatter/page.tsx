@@ -15,7 +15,7 @@ export default function JsonFormatterPage() {
       title="JSON Formatter & Validator"
       description="Format, validate, and minify JSON directly in your browser. Your JSON stays in the browser while you work."
       howToUse={<><p>Paste JSON into the input panel. The validator checks it as you type.</p><p>Select <strong>Format</strong> to pretty-print JSON, or <strong>Minify</strong> to remove unnecessary whitespace. Use Copy to copy the result.</p></>}
-      examples={<><p>Input: <code>{"{"name":"Alex","age":14}"}</code></p><p>Formatted output becomes an indented JSON object that is easier to read and debug.</p></>}
+      examples={<><p>Input: <code>{'{"name":"Alex","age":14}'}</code></p><p>Formatted output becomes an indented JSON object that is easier to read and debug.</p></>}
       faq={<>
         <details><summary>Is my JSON uploaded to a server?</summary><p>No. Formatting and validation are performed in your browser.</p></details>
         <details><summary>Does this validate JSON syntax?</summary><p>Yes. The browser JSON parser checks whether the input is valid JSON.</p></details>
