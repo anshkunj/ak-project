@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
+        <ThemeProvider>
         <header className="site-header">
           <div className="container nav">
             <Link href="/" className="brand">
@@ -25,6 +28,7 @@ export default function RootLayout({
               <Link href="/#about">About</Link>
               <Link href="/dashboard">Dashboard</Link>
               <Link href="/contact">Contact</Link>
+              <ThemeToggle />
             </nav>
           </div>
         </header>
@@ -52,6 +56,7 @@ export default function RootLayout({
             <span>Owned and operated by Megha Gupta</span>
           </div>
         </footer>
+        </ThemeProvider>
       </body>
     </html>
   );
