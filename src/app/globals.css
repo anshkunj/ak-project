@@ -1166,3 +1166,15 @@ h3 {
   .json-editor { min-height: 280px; }
   .tool-panel-header { flex-direction: column; }
 }
+
+
+/* App shell */
+.site-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex: 1;
+}
