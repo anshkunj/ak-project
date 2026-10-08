@@ -19,6 +19,9 @@ export default function Home() {
             <Link className="button secondary" href="/tools">
               Explore Tools
             </Link>
+            <Link className="button secondary" href="/games">
+              Play Games
+            </Link>
           </div>
         </div>
       </section>
@@ -64,10 +67,10 @@ export default function Home() {
           </article>
           <article className="card">
             <div className="card-number">03</div>
-            <h3>Continuous development</h3>
+            <h3>Browser games</h3>
             <p>
-              Products are validated, improved and launched incrementally
-              rather than presented before they are ready.
+              Lightweight games designed for quick sessions, replayability and
+              easy access on mobile and desktop.
             </p>
           </article>
         </div>
