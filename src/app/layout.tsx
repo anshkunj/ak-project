@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="site-body">
         <ThemeProvider>
         <header className="site-header">
           <div className="container nav">
@@ -34,7 +34,7 @@ export default function RootLayout({
           </div>
         </header>
 
-        {children}
+        <main className="site-main">{children}</main>
 
         <footer className="site-footer">
           <div className="container footer-grid">
