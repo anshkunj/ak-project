@@ -43,7 +43,8 @@ export default function RootLayout({
               <p className="muted">
                 Software products and SaaS, built as practical digital tools.
               </p>
-              <p className="muted">Website owner/contact: Megha Gupta</p>
+              <br />
+              <p className="color-surface-muted">Website owner/contact: Megha Gupta</p>
             </div>
             <div className="footer-links">
               <Link href="/contact">Contact Us</Link>
