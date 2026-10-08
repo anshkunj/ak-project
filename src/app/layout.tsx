@@ -5,9 +5,9 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AnshKunj — Software Products",
+  title: "anshkunj — Software Products",
   description:
-    "AnshKunj is an early-stage software venture building practical SaaS and digital products.",
+    "anshkunj is an early-stage software venture building practical SaaS and digital products.",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
         <header className="site-header">
           <div className="container nav">
             <Link href="/" className="brand">
-              AnshKunj
+              anshkunj
             </Link>
             <nav aria-label="Main navigation">
               <Link href="/#about">About</Link>
@@ -38,7 +38,7 @@ export default function RootLayout({
         <footer className="site-footer">
           <div className="container footer-grid">
             <div>
-              <p className="footer-brand">AnshKunj</p>
+              <p className="footer-brand">anshkunj</p>
               <p className="muted">
                 Software products and SaaS, built as practical digital tools.
               </p>
@@ -52,7 +52,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="container footer-bottom">
-            <span>© {new Date().getFullYear()} AnshKunj. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} anshkunj. All rights reserved.</span>
             <span>Owned and operated by Megha Gupta</span>
           </div>
         </footer>

@@ -11,7 +11,7 @@ export function Card({
 }: CardProps) {
   return (
     <div
-      className={\`ui-card \${interactive ? "ui-card-interactive" : ""} \${className}\`.trim()}
+      className={`ui-card ${interactive ? "ui-card-interactive" : ""} ${className}`.trim()}
       {...props}
     />
   );

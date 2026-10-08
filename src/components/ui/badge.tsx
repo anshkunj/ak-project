@@ -13,7 +13,7 @@ export function Badge({
 }: BadgeProps) {
   return (
     <span
-      className={\`ui-badge ui-badge-\${variant} \${className}\`.trim()}
+      className={`ui-badge ui-badge-${variant} ${className}`.trim()}
       {...props}
     >
       {children}

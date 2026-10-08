@@ -4,5 +4,5 @@ export function Label({
   className = "",
   ...props
 }: LabelHTMLAttributes<HTMLLabelElement>) {
-  return <label className={\`ui-label \${className}\`.trim()} {...props} />;
+  return <label className={`ui-label ${className}`.trim()} {...props} />;
 }

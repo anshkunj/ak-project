@@ -4,5 +4,5 @@ export function Input({
   className = "",
   ...props
 }: InputHTMLAttributes<HTMLInputElement>) {
-  return <input className={\`ui-input \${className}\`.trim()} {...props} />;
+  return <input className={`ui-input ${className}`.trim()} {...props} />;
 }
