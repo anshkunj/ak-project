@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="container hero-inner">
-          <div className="eyebrow">EARLY-STAGE SOFTWARE VENTURE</div>
+          <div className="eyebrow">SOFTWARE VENTURE</div>
           <h1>Building practical software for the way people work and learn.</h1>
           <p className="hero-copy">
             anshkunj is an early-stage software venture focused on building
