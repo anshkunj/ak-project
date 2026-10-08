@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button, Card, Label, Textarea } from "@/components/ui";
 
 const initialText = "Hello, world!";
+const initialBase64 = "SGVsbG8sIHdvcmxkIQ==";
 
 function encodeBase64(value: string) {
   const bytes = new TextEncoder().encode(value);
@@ -20,7 +21,7 @@ function decodeBase64(value: string) {
 
 export function Base64Tool() {
   const [textInput, setTextInput] = useState(initialText);
-  const [base64Input, setBase64Input] = useState("");
+  const [base64Input, setBase64Input] = useState(initialBase64);
   const [encodedOutput, setEncodedOutput] = useState("");
   const [decodedOutput, setDecodedOutput] = useState("");
   const [mode, setMode] = useState<"encode" | "decode">("encode");
