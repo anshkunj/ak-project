@@ -19,14 +19,15 @@ function decodeBase64(value: string) {
 }
 
 export function Base64Tool() {
-  const [input, setInput] = useState(initialText);
+  const [textInput, setTextInput] = useState(initialText);
+  const [base64Input, setBase64Input] = useState("");
   const [output, setOutput] = useState("");
   const [mode, setMode] = useState<"encode" | "decode">("encode");
   const [error, setError] = useState<string | null>(null);
 
   function handleConvert() {
     try {
-      setOutput(mode === "encode" ? encodeBase64(input) : decodeBase64(input));
+      setOutput(mode === "encode" ? encodeBase64(textInput) : decodeBase64(base64Input));
       setError(null);
     } catch {
       setOutput("");
@@ -39,7 +40,8 @@ export function Base64Tool() {
   }
 
   function handleClear() {
-    setInput("");
+    setTextInput("");
+    setBase64Input("");
     setOutput("");
     setError(null);
   }
@@ -65,8 +67,14 @@ export function Base64Tool() {
           </div>
           <Textarea
             id="base64-input"
-            value={input}
-            onChange={(event) => setInput(event.target.value)}
+            value={mode === "encode" ? textInput : base64Input}
+            onChange={(event) => {
+              if (mode === "encode") {
+                setTextInput(event.target.value);
+              } else {
+                setBase64Input(event.target.value);
+              }
+            }}
             spellCheck={false}
             className="json-editor"
             placeholder={mode === "encode" ? "Hello, world!" : "SGVsbG8sIHdvcmxkIQ=="}
