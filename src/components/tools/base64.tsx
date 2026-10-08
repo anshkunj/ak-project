@@ -21,28 +21,38 @@ function decodeBase64(value: string) {
 export function Base64Tool() {
   const [textInput, setTextInput] = useState(initialText);
   const [base64Input, setBase64Input] = useState("");
-  const [output, setOutput] = useState("");
+  const [encodedOutput, setEncodedOutput] = useState("");
+  const [decodedOutput, setDecodedOutput] = useState("");
   const [mode, setMode] = useState<"encode" | "decode">("encode");
   const [error, setError] = useState<string | null>(null);
 
   function handleConvert() {
     try {
-      setOutput(mode === "encode" ? encodeBase64(textInput) : decodeBase64(base64Input));
+      if (mode === "encode") {
+        setEncodedOutput(encodeBase64(textInput));
+      } else {
+        setDecodedOutput(decodeBase64(base64Input));
+      }
       setError(null);
     } catch {
-      setOutput("");
+      if (mode === "encode") {
+        setEncodedOutput("");
+      } else {
+        setDecodedOutput("");
+      }
       setError(mode === "decode" ? "Invalid Base64 input." : "Unable to encode this text.");
     }
   }
 
   function handleCopy() {
-    void navigator.clipboard.writeText(output);
+    void navigator.clipboard.writeText(mode === "encode" ? encodedOutput : decodedOutput);
   }
 
   function handleClear() {
     setTextInput("");
     setBase64Input("");
-    setOutput("");
+    setEncodedOutput("");
+    setDecodedOutput("");
     setError(null);
   }
 
@@ -91,9 +101,9 @@ export function Base64Tool() {
               <Label htmlFor="base64-output">{mode === "encode" ? "Base64 output" : "Decoded text"}</Label>
               <p>Conversion happens locally in your browser.</p>
             </div>
-            <Button type="button" variant="secondary" onClick={handleCopy} disabled={!output}>Copy</Button>
+            <Button type="button" variant="secondary" onClick={handleCopy} disabled={!(mode === "encode" ? encodedOutput : decodedOutput)}>Copy</Button>
           </div>
-          <Textarea id="base64-output" value={output} readOnly spellCheck={false} className="json-editor" aria-label="Base64 conversion output" />
+          <Textarea id="base64-output" value={mode === "encode" ? encodedOutput : decodedOutput} readOnly spellCheck={false} className="json-editor" aria-label="Base64 conversion output" />
           {error && <p className="tool-error" role="alert">{error}</p>}
         </Card>
       </div>
