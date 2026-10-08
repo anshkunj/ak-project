@@ -23,7 +23,7 @@ export default function RootLayout({
     >
       <head>
         <title>Anshkunj</title>
-        <meta name="google-adsense-account" content="ca-pub-2579120692263294">
+        <meta name="google-adsense-account" content="ca-pub-2579120692263294" />
       </head>
       <body className="site-body">
         <ThemeProvider>
