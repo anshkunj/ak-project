@@ -1190,3 +1190,46 @@ h3 {
 .site-main {
   flex: 1;
 }
+
+/* Games */
+.games-page,.game-page{min-height:720px;padding:72px 0 100px}
+.games-index-header,.game-header{max-width:780px;margin-bottom:46px}
+.games-index-header h1,.game-header h1{max-width:none;margin:14px 0;font-size:clamp(42px,6vw,68px)}
+.games-index-header p:last-child,.game-header>p:last-child{margin-bottom:0;color:var(--color-text-secondary);font-size:18px;line-height:var(--leading-relaxed)}
+.games-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.game-index-card{min-height:250px;padding:26px;border:1px solid var(--color-border);border-radius:var(--radius-xl);background:var(--color-surface);box-shadow:var(--shadow-sm);transition:transform var(--transition-fast),border-color var(--transition-fast),box-shadow var(--transition-fast)}
+.game-index-card:hover{transform:translateY(-2px);border-color:var(--color-text-muted);box-shadow:var(--shadow-md)}
+.game-number{color:var(--color-text-subtle);font-size:var(--text-xs);font-weight:800}
+.game-index-card h2{margin:52px 0 9px;font-size:24px}
+.game-index-card p{min-height:48px;margin-bottom:22px;color:var(--color-text-muted);line-height:var(--leading-relaxed)}
+.game-link{font-size:var(--text-sm);font-weight:700}
+.reaction-game{max-width:1000px}
+.reaction-card{padding:20px}
+.reaction-topbar{display:grid;grid-template-columns:110px 1fr 110px;align-items:center;gap:16px;padding:4px 4px 18px}
+.reaction-topbar strong{font-size:20px;letter-spacing:-.03em}
+.reaction-label{margin:0 0 4px;color:var(--color-text-subtle);font-size:10px;font-weight:800;letter-spacing:.12em}
+.reaction-instructions{text-align:center;color:var(--color-text-secondary);font-size:var(--text-sm);font-weight:700}
+.reaction-instructions p{margin:0}
+.reaction-score{text-align:right}
+.reaction-target{width:100%;min-height:430px;display:flex;align-items:center;justify-content:center;border:0;border-radius:var(--radius-lg);background:var(--color-surface-muted);color:var(--color-text);font-size:clamp(30px,5vw,52px);font-weight:800;letter-spacing:-.04em;transition:background var(--transition-fast),color var(--transition-fast)}
+.reaction-target:hover{opacity:.97}
+.reaction-target.reaction-waiting{background:var(--color-primary);color:var(--color-primary-contrast)}
+.reaction-target.reaction-ready{background:var(--color-success);color:#fff}
+.reaction-target.reaction-result{background:var(--color-surface-muted)}
+.reaction-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 4px 0;color:var(--color-text-muted);font-size:var(--text-xs)}
+.reaction-footer span{line-height:1.5}
+.reaction-meta{display:flex;gap:8px;justify-content:center;margin-top:14px;color:var(--color-text-subtle);font-size:var(--text-xs)}
+.reaction-back{margin-top:28px;font-size:var(--text-sm);font-weight:700}
+.reaction-back a:hover{color:var(--color-text-secondary)}
+.game-info{max-width:760px;padding-top:56px;margin-top:64px;border-top:1px solid var(--color-border)}
+.game-info h2{font-size:30px}
+.game-info p{color:var(--color-text-secondary);line-height:var(--leading-relaxed)}
+@media (max-width:760px){
+.games-page,.game-page{padding:48px 0 70px}
+.games-grid{grid-template-columns:1fr}
+.reaction-topbar{grid-template-columns:1fr 1fr}
+.reaction-instructions{grid-column:1/-1;grid-row:1;margin-bottom:8px}
+.reaction-score{text-align:right}
+.reaction-target{min-height:360px}
+.reaction-footer{align-items:flex-start}
+}
