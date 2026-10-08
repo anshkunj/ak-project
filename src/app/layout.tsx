@@ -21,6 +21,10 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
+      <head>
+        <title>Anshkunj</title>
+        <meta name="google-adsense-account" content="ca-pub-2579120692263294">
+      </head>
       <body className="site-body">
         <ThemeProvider>
         <header className="site-header">
