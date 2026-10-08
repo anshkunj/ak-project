@@ -5,6 +5,7 @@ import { JsonFormatter } from "@/components/tools/json-formatter";
 export const metadata: Metadata = {
   title: "JSON Formatter & Validator — Free Online Tool | anshkunj",
   description: "Format, validate, and minify JSON in your browser. A fast free JSON formatter and validator with no account required.",
+  alternates: { canonical: "/tools/json-formatter" },
 };
 
 export default function JsonFormatterPage() {
@@ -20,11 +21,7 @@ export default function JsonFormatterPage() {
         <details><summary>Does this validate JSON syntax?</summary><p>Yes. The browser JSON parser checks whether the input is valid JSON.</p></details>
         <details><summary>Can I minify JSON?</summary><p>Yes. Minify removes formatting whitespace while keeping the JSON data intact.</p></details>
       </>}
-      relatedTools={[
-        { name: "Base64 Encoder & Decoder", href: "/tools/base64" },
-        { name: "URL Encoder & Decoder", href: "/tools/url-encoder" },
-        { name: "JWT Decoder", href: "/tools/jwt-decoder" },
-      ]}
+      relatedTools={[]}
     >
       <JsonFormatter />
     </ToolShell>
