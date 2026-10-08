@@ -8,14 +8,14 @@ export default function TermsPage() {
           <p><strong>Effective date:</strong> October 8, 2026</p>
 
           <p>
-            These Terms &amp; Conditions govern your use of the AnshKunj
-            website and any AnshKunj software product or service made available
+            These Terms &amp; Conditions govern your use of the anshkunj
+            website and any anshkunj software product or service made available
             through it.
           </p>
 
-          <h2>1. About AnshKunj</h2>
+          <h2>1. About anshkunj</h2>
           <p>
-            AnshKunj is an early-stage software venture owned and operated by
+            anshkunj is an early-stage software venture owned and operated by
             Megha Gupta. Products and services may be introduced or changed as
             development progresses.
           </p>
@@ -56,7 +56,7 @@ export default function TermsPage() {
 
           <h2>6. Intellectual property</h2>
           <p>
-            Unless otherwise stated, the AnshKunj name, website content,
+            Unless otherwise stated, the anshkunj name, website content,
             software, branding and original materials are owned by or licensed
             to the website owner and may not be copied, redistributed or
             commercially exploited without permission.

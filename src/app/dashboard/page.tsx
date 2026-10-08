@@ -19,7 +19,7 @@ const activity = [
   ["Today", "Product architecture reviewed", "LearningOS"],
   ["Yesterday", "Assessment workflow prototyped", "School Platform"],
   ["Oct 6", "Authentication and backend foundation updated", "LearningOS"],
-  ["Oct 4", "Product roadmap refined", "AnshKunj"],
+  ["Oct 4", "Product roadmap refined", "anshkunj"],
 ];
 
 export default function DashboardPage() {
@@ -28,7 +28,7 @@ export default function DashboardPage() {
       <div className="container">
         <div className="dashboard-header">
           <div>
-            <p className="eyebrow">ANSHKUNJ WORKSPACE</p>
+            <p className="eyebrow">anshkunj WORKSPACE</p>
             <h1>Product Dashboard</h1>
             <p className="dashboard-subtitle">
               A snapshot of the software products currently being designed and built.
@@ -129,7 +129,7 @@ export default function DashboardPage() {
             <p className="eyebrow">EARLY STAGE</p>
             <h2>This dashboard shows development work, not customer metrics.</h2>
             <p>
-              AnshKunj is currently building its first software products. Customer
+              anshkunj is currently building its first software products. Customer
               accounts, subscriptions, payments and production analytics will be
               introduced only when the corresponding products are launched.
             </p>

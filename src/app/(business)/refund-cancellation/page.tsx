@@ -9,12 +9,12 @@ export default function RefundCancellationPage() {
 
           <p>
             This policy explains the current refund and cancellation approach
-            for AnshKunj products and services.
+            for anshkunj products and services.
           </p>
 
           <h2>1. Current status</h2>
           <p>
-            AnshKunj is currently developing its software products and does not
+            anshkunj is currently developing its software products and does not
             currently advertise a paid product on this website. Therefore, no
             purchase or subscription is currently being offered through this
             page.

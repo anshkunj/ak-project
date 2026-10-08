@@ -8,13 +8,13 @@ export default function ContactPage() {
         <h1>Let&apos;s talk.</h1>
         <div className="legal-content">
           <p>
-            For questions about AnshKunj, our products, payments, orders,
+            For questions about anshkunj, our products, payments, orders,
             cancellations or refunds, please contact the website owner using
             the details below.
           </p>
 
           <div className="contact-card">
-            <p><strong>Website / Brand:</strong> AnshKunj</p>
+            <p><strong>Website / Brand:</strong> anshkunj</p>
             <p><strong>Owner:</strong> Megha Gupta</p>
             <p>
               <strong>Email:</strong>{" "}
@@ -28,7 +28,7 @@ export default function ContactPage() {
 
           <h2>Current product status</h2>
           <p>
-            AnshKunj is currently in the early stage of developing software and
+            anshkunj is currently in the early stage of developing software and
             SaaS products. Product-specific features, pricing and purchase
             information will be published on the relevant product page before
             a product is offered for payment.

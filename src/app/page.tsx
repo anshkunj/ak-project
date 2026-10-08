@@ -8,7 +8,7 @@ export default function Home() {
           <div className="eyebrow">EARLY-STAGE SOFTWARE VENTURE</div>
           <h1>Building practical software for the way people work and learn.</h1>
           <p className="hero-copy">
-            AnshKunj is an early-stage software venture focused on building
+            anshkunj is an early-stage software venture focused on building
             useful SaaS and digital products. Our products are currently under
             development.
           </p>
@@ -26,7 +26,7 @@ export default function Home() {
       <section id="about" className="section">
         <div className="container two-column">
           <div>
-            <p className="eyebrow">ABOUT ANSHKUNJ</p>
+            <p className="eyebrow">ABOUT anshkunj</p>
             <h2>Products are being built before they are launched.</h2>
           </div>
           <div className="prose">

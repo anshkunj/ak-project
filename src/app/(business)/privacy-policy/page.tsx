@@ -5,10 +5,8 @@ export default function PrivacyPolicyPage() {
         <p className="eyebrow">LEGAL</p>
         <h1>Privacy Policy</h1>
         <div className="legal-content">
-          <p><strong>Effective date:</strong> October 8, 2026</p>
-
           <p>
-            This Privacy Policy explains how AnshKunj, owned and operated by
+            This Privacy Policy explains how anshkunj, owned and operated by
             Megha Gupta, handles information when you visit this website or
             contact us.
           </p>
@@ -80,7 +78,7 @@ export default function PrivacyPolicyPage() {
           <h2>8. Your questions and requests</h2>
           <p>
             For privacy-related questions or requests concerning information
-            handled by AnshKunj, contact Megha Gupta at{" "}
+            handled by anshkunj, contact Megha Gupta at{" "}
             <a href="mailto:meghag2075@gmail.com">meghag2075@gmail.com</a>.
           </p>
 
