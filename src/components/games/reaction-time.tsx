@@ -12,7 +12,7 @@ export function ReactionTimeGame() {
   const [best, setBest] = useState<number | null>(null);
   const [message, setMessage] = useState("Test your reaction speed.");
   const readyAt = useRef<number | null>(null);
-  const timeoutId = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const timeoutId = useRef<number | null>(null);
 
   useEffect(() => {
     const stored = window.localStorage.getItem("reaction-time-best");
