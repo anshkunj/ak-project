@@ -16,8 +16,8 @@ export default function Home() {
             <Link className="button primary" href="/contact">
               Contact Us
             </Link>
-            <Link className="button secondary" href="#about">
-              Learn More
+            <Link className="button secondary" href="/tools">
+              Explore Tools
             </Link>
           </div>
         </div>
