@@ -26,6 +26,7 @@ export default function RootLayout({
             </Link>
             <nav aria-label="Main navigation">
               <Link href="/tools">Tools</Link>
+              <Link href="/games">Games</Link>
               <Link href="/#about">About</Link>
               <Link href="/dashboard">Dashboard</Link>
               <Link href="/contact">Contact</Link>
