@@ -33,12 +33,9 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <h2>Current product status</h2>
+          <h2>Business & Status</h2>
           <p>
-            anshkunj is currently in the early stage of developing software and
-            SaaS products. Product-specific features, pricing and purchase
-            information will be published on the relevant product page before
-            a product is offered for payment.
+            For questions, support requests, product-related inquiries, or business collaborations, please reach out using the contact details above. We’ll get back to you as soon as possible.
           </p>
 
           <p>
