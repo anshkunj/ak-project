@@ -26,7 +26,7 @@ export default function ContactPage() {
             </p>
             <p>
               <strong>Address:</strong><br />
-              W/O Pankaj Kumar Gupta, E-193<br />
+              E-193<br />
               Near Chota Park, Mohan Nagar<br />
               Hindaun – 322230<br />
               Rajasthan, India
