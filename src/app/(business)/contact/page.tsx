@@ -24,6 +24,13 @@ export default function ContactPage() {
               <strong>Phone:</strong>{" "}
               <a href="tel:+917597087355">+91 75970 87355</a>
             </p>
+            <p>
+              <strong>Address:</strong><br />
+              W/O Pankaj Kumar Gupta, E-193<br />
+              Near Chota Park, Mohan Nagar<br />
+              Hindaun – 322230<br />
+              Rajasthan, India
+            </p>
           </div>
 
           <h2>Current product status</h2>
